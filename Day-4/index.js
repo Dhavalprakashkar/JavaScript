@@ -14,3 +14,14 @@ function checkIsUserValidForDrivingLicense(age){
 
 }
 checkIsUserValidForDrivingLicense(18)
+
+
+
+
+
+
+
+
+
+
+
