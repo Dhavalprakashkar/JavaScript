@@ -1,11 +1,14 @@
-// function Addition(starting,ending){
-//    var count=0;
-//    for(var i=starting;i<=ending;i++){
-//     count=count+i;
-// console.log(count, "count", i, "count")
-//    }
-// }
-// Addition(20,70)
+// Q.Addition Sum
+
+function Addition(starting,ending){
+   var count=0;
+   for(var i=starting;i<=ending;i++){
+    count=count+i;
+console.log(count, "count", i, "count")
+   }
+}
+
+Addition(20,70)
 
 // // Q.Factorial
 
@@ -22,7 +25,7 @@
 // findFactorial(4)
 
 
-// Q 8 factorial
+// Q. Factorial
 
 // function factorial(numb){
 //     var count = 1;
@@ -34,25 +37,14 @@
 // }
 // factorial(8)
 
+// Q. Palindrome
 
-
-
-
-
-
-
-// Palindrome
-
-function palindrome(string){
-    for(var i=0;i<Math.floor(string.length/2);i++){
-        if(string[i] !=string[string.length-1-i]){
-            return false;
-        }
-    }
-    return true
-}
-console.log(palindrome("madmm"));
-
-
-
-
+// function palindrome(string){
+//     for(var i=0;i<Math.floor(string.length/2);i++){
+//         if(string[i] !=string[string.length-1-i]){
+//             return false;
+//         }
+//     }
+//     return true
+// }
+// console.log(palindrome("madmm"));
