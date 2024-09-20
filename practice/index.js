@@ -437,3 +437,203 @@ var target = 5;
 //         console.log(v)
 //     }
 //     topSpenders(transactions)
+
+
+// 3. Remove Duplicates from Sorted Array
+// ● Problem: Remove duplicates in place from a sorted array and return the new length.
+// ○ Input: nums = [3, 3, 4, 5, 5]
+// ■ Output: 3, nums = [3, 4, 5]
+
+
+// var inp=[3, 3, 4, 5, 5]
+// function duplicateremover(inp){
+    
+//     for(var i=0;i<=inp.length-1;i++){
+//         if(inp[i]==inp[i+1]){
+//             inp.slice(i,1)
+//             i--;
+            
+//         }
+//     }
+//     console.log(inp)
+//     console.log(inp.length)
+// }
+// duplicateremover(inp)
+
+// var inp=[3, 3, 4, 5, 5]
+// function duplicateremover(inp){
+//         for(var i=0; i<=inp.length-1;i++){
+//             if(inp[i]==inp[i+1]){
+//                 inp.splice(i,1);
+//                 i--;
+    
+//             }
+//         }
+//     console.log(inp.length);
+//     console.log(inp);
+//     }
+//     duplicateremover(inp)
+
+
+// 3. Merge Two Sorted Arrays
+// ● Problem: Given two sorted arrays, merge them into one sorted array.
+// ● Input 1: [1, 3, 5],[2, 4, 6]
+// ● Output1: [1, 2, 3, 4, 5, 6]
+
+// var inp=[1,3,5]
+// var inp1=[2,4,6]
+// var sorted=inp.concat(inp1)
+// // console.log(sorted)
+// sorted.sort((a,b)=>{
+//     return a-b
+// })
+// console.log(sorted)
+
+
+// 1. Problem: Given an array of integers and a target sum, return the indices of the two
+// numbers that add up to the target.
+// ● Input 1: [2, 7, 11, 15],9
+// ● Output1: [0, 1]
+
+// Q3 Find the Longest Substring Without Repeating Characters:
+// Question: Write a JavaScript function to find the length of the
+// longest substring without repeating characters.
+// Examples:
+// ● Input: "abcabcbb"
+// ○ Output: 3 (substring: "abc")
+// ● Input: "bbbbb"
+// ○ Output: 1 (substring: "b")
+// ● Input: "pwwkew"
+// ○ Output: 3 (substring: "wke")
+// ● Input: "dvdf"
+// ○ Output: 3 (substring: "vdf")
+
+
+// var input="abcabcbb"
+// function arry(input){
+//     var string=""
+//     for(var i=0;i<=input.length-1;i++){
+//         if(string.includes(input[i])){
+//             console.log(string)
+//             return string.length
+//         }
+//         else{
+//             string=string+input[i]
+
+//         }
+
+            
+
+//     }
+//     return string
+// }
+// console.log(arry(input))
+
+
+// const students = [
+//     { name: "Alice", subjects: ["Math", "Science"] },
+//     { name: "Bob", subjects: ["English", "Math"] },
+//     { name: "Charlie", subjects: ["Math", "History"] },
+//     { name: "David", subjects: ["Science", "History"] }
+//   ];
+  
+//   function countSubjects(students) {
+//     const subjectCount = {};
+  
+//     students.forEach(student => {
+//       student.subjects.forEach(subject => {
+//         // Check if the subject exists in the object
+//         if (subjectCount[subject]) {
+//           subjectCount[subject] ++;
+//         }
+//         else{
+//         // Increment the count
+//         subjectCount[subject] = 1;
+//         }
+//       });
+//     });
+  
+//     return subjectCount;
+//   }
+  
+//   console.log(countSubjects(students));
+  
+
+// const transactions = [
+//         { userId: 1, amount: 50, date: "2023-01-01" },
+//         { userId: 2, amount: 20, date: "2023-01-02" },
+//         { userId: 1, amount: 100, date: "2023-01-03" },
+//         { userId: 3, amount: 150, date: "2023-01-04" },
+//         { userId: 2, amount: 30, date: "2023-01-05" }
+//         ];
+
+//         function inv(transactions){
+//             var obj={};
+//             var ary=[];
+
+//             for(let trans of transactions){
+//                 const{userId}=trans;
+//                 if(obj[userId]){
+//                     obj[userId]++
+//                 }
+//                 else{
+//                     obj[userId]=1;
+//                 }
+//             }
+//             // console.log(obj)
+//         var value=Object.keys(obj)
+//         // console.log(value)
+//         for(let v of value){
+//             if(obj[v]>1){
+//                 ary.push(v)
+//             }
+//         }
+//         console.log(ary)
+//         }
+//         inv(transactions)
+
+        
+// const books = [
+//         	{ title: "Book A", author: "Author 1", genres: ["Fiction", "Mystery"] },
+//         	{ title: "Book B", author: "Author 2", genres: ["Non-fiction", "History"] },
+//         	{ title: "Book C", author: "Author 3", genres: ["Fiction", "History"] },
+//         	{ title: "Book D", author: "Author 4", genres: ["Mystery", "Thriller"] },
+//         ];
+
+//         function bok(books){
+//             var obj={}
+
+//             for(let b of books){
+//                 for(let gen of b.genres){
+//                     if(obj[gen]){
+//                         obj[gen]++;
+//                     }
+//                     else{
+//                         obj[gen]=1
+//                     }
+//                 }
+//             }
+//             console.log(obj)
+//         }
+//         bok(books)
+       
+
+// Find the First Non-Repeating Character:
+// Question: Write a JavaScript function to find the first non-repeating character in a string.
+// Examples:
+// ● Input: "aabbccddeef"
+// ○ Output: "f"
+
+var inp="aabbccddeef"
+function in1(inp){
+    for(var i=0;i<=inp.length-1;i++){
+        // console.log(inp.indexOf(inp[i]))
+        // console.log(inp.lastIndexOf(inp[i]))
+        // console.log("-----------")
+        if(inp.indexOf(inp[i])==inp.lastIndexOf(inp[i])){
+            return inp[i]
+        }
+    }
+    
+}
+console.log(in1(inp))
