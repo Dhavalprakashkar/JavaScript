@@ -624,16 +624,21 @@ var target = 5;
 // ● Input: "aabbccddeef"
 // ○ Output: "f"
 
-var inp="aabbccddeef"
-function in1(inp){
-    for(var i=0;i<=inp.length-1;i++){
-        // console.log(inp.indexOf(inp[i]))
-        // console.log(inp.lastIndexOf(inp[i]))
-        // console.log("-----------")
-        if(inp.indexOf(inp[i])==inp.lastIndexOf(inp[i])){
-            return inp[i]
-        }
-    }
+// var inp="aabbccddeef"
+// function in1(inp){
+//     for(var i=0;i<=inp.length-1;i++){
+//         // console.log(inp.indexOf(inp[i]))
+//         // console.log(inp.lastIndexOf(inp[i]))
+//         // console.log("-----------")
+//         if(inp.indexOf(inp[i])==inp.lastIndexOf(inp[i])){
+//             return inp[i]
+//         }
+//     }
     
-}
-console.log(in1(inp))
+// }
+// console.log(in1(inp))
+
+
+// var inp=[2,3,3,4]
+// console.log(inp.indexOf(4))
+
