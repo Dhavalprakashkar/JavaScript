@@ -642,3 +642,112 @@ var target = 5;
 // var inp=[2,3,3,4]
 // console.log(inp.indexOf(4))
 
+
+
+
+
+
+
+// Find Maximum in an Array 
+
+// input = [1, 5, 3, 9, 2];
+// var a = 0;  
+
+// function num() {
+//     for (var i = 0; i <= input.length - 1; i++) {
+//         if (input[i] > a) { 
+//             a = input[i];    
+//         }
+//     }
+//     return a; 
+// }
+
+// console.log(num());  
+
+// Reverse String 
+
+// Palindrome 
+
+// var input="racecar"
+// function car(input){
+//     for(var i=0;i<Math.floor(input.length/2)){
+//         if(input[i]!==input[6-i]){
+//             return false
+//         }
+//         if(input[i]==input[6-i]){
+//             console.log("Palindrome")
+//         }
+//     }
+// }
+// console.log(car)
+
+// var input = "racecar"
+// function car(input) {
+//     for (var i = 0; i < Math.floor(input.length / 2); i++) {
+//         if (input[i] !== input[input.length - 1 - i]) {
+//             return "not palindrome";
+//         }
+        
+           
+        
+//     }
+//     return "palindrome"
+// }
+// console.log(car(input));
+
+
+
+// input=[1,2,3,4]
+
+// function ch(input){
+//     var a=0
+//     for(var i=0;i<=input.length-1;i++){
+//         a=input[i]+a
+
+
+//     }
+//     console.log(a)
+    
+// }
+// ch(input)
+
+
+// input="aabccdeff"
+// function ch(input){
+// for(var i=0;i<=input.length-1;i++){
+//     if(input[i]==input[i+1])
+// }
+// }
+
+// var input=[5,7,2,9,3]
+// input.sort((a,b)=>{
+//     return b-a
+// })
+// for(var i=0;i<=input.length-1;i++){
+//     if(i==1){
+//         console.log(input[i])
+//     }
+// }
+
+
+
+// var inp=[1,2,3,4,5]
+// function ch(inp){
+//     for(var i=0;i<=inp.length-1;i++){
+//         if(inp[i]+1!==inp[i+1]){
+//             return "false"
+//         }
+        
+//     }
+//     return "true"
+// }
+// console.log(ch(inp))
+
+
+var input=5
+var count=1;
+for(var i=5;i>0;i--){
+    count=i*count
+
+} 
+console.log(count)   
