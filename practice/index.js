@@ -744,10 +744,223 @@ var target = 5;
 // console.log(ch(inp))
 
 
-var input=5
-var count=1;
-for(var i=5;i>0;i--){
-    count=i*count
+// var input=5
+// var count=1;
+// for(var i=5;i>0;i--){
+//     count=i*count
 
-} 
-console.log(count)   
+// } 
+// console.log(count)   
+
+// var input="hello"
+// function kjhfe(input){
+//     console.log(input.split("").reverse().join(""))
+// }
+// kjhfe(input);
+
+// var a="Hello World"
+// var b="o"
+// var count=0
+// for(var i=0;i<=a.length-1;i++){
+//     if(a[i]==b){
+//         count++;
+
+//     }
+//     console.log(count)
+// }
+
+
+// You are given an array of objects representing products in a store. Each object has three
+// properties: name, category, and price. Write a function called filterAndTransformProducts that
+// filters the products by a given category and then returns an array of strings where each string is
+// the product's name and price concatenated.
+// const products = [
+// { name: "Laptop", category: "Electronics", price: 1000 },
+// { name: "Shirt", category: "Clothing", price: 50 },
+// { name: "Phone", category: "Electronics", price: 500 },
+// { name: "Shoes", category: "Clothing", price: 80 }
+// ];
+
+
+
+// var flt=products.filter((item)=>{
+//   return item.category=="Clothing"
+// });
+// console.log(flt)
+
+
+// You are given an array of objects representing students. Each object has a name property and a
+//  subjects property, which is an array of strings representing the subjects the student is enrolled
+//  in. Write a function called countSubjects that returns an object where each key is a subject and
+//  the value is the number of students enrolled in that subject.
+//  const students = [
+//  { name: "Alice", subjects: ["Math", "Science"] },
+//  { name: "Bob", subjects: ["English", "Math"] },
+//  { name: "Charlie", subjects: ["Math", "History"] },
+//  { name: "David", subjects: ["Science", "History"] }
+//  ];
+
+//  var ob={}
+//  for(let i of students){
+//     for(let s of i.subjects){
+//         if(ob[s]){
+//             ob[s]++
+//         }
+//         else{
+//             ob[s]=1
+//         }
+//     }
+    
+//  }
+//  console.log(ob)
+
+
+// test1:
+
+// 1. Create an array with the numbers 1 through 10. Write a function to remove all even
+//  numbers from this array and return the new array.
+
+//  t=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// function xyz(t){
+//     for(var i=0;i<=t.length-1;i++){
+//         if(t[i]%2==0){
+//             t.splice(i,1)
+//         }
+//     }
+//     return t
+// }
+// console.log(xyz(t))
+
+// 6. Write a function that takes three numbers and returns the largest of the three
+//  without using the Math.max() method.
+
+//  inp= [3, 5, 1]
+//  a=3;
+//  b=5;
+//  c=1
+//  function xyz(a,b,c){
+//     {
+//         if(a>b && a>c){
+//             console.log("a is bigger")
+//         }
+//         else if(b>a && b>c){
+//             console.log("b is big")
+//         }
+//         else{
+//             console.log("c big")
+//         }
+//         }
+//     }
+//  xyz(a,b,c)
+
+// 7. Write a function that takes an array of numbers and returns the product of all the
+//  numbers in the array.
+
+//  inp= [1, 2, 3, 4]
+//  var t=1
+//  function xyz(){
+//     for(var i=0;i<=inp.length-1;i++){
+//         t=t*inp[i]
+      
+//         }
+
+//         return t
+//     }
+    
+// console.log(xyz())
+
+
+// 8. Write a function that takes a string and an optional character. The function should
+// return the number of times the character appears in the string. If the character is
+// not provided, count the number of spaces in the string.
+
+// var str="Hello World"
+// var t="o"
+// count=0
+// function xyz(){
+//     for(var i=0;i<=str.length-1;i++){
+//         if(str[i]==t){
+//             count ++
+//         }
+//     }
+//     return count
+// }
+// console.log(xyz())
+
+// 10. Write a function that takes an array of strings and returns an object where the
+// keys are the strings and the values are the lengths of those strings. The function
+// should exclude strings that have a length of 3 or less.
+
+// var str=["apple", "bat", "car", "dolphin"]
+// var ob=[]
+// function xyz(){
+//     for(var i=0;i<=str.length-1;i++){
+//         if(str[i].length>3){
+//             ob[str[i]]=str[i].length
+//         }
+//     }
+//     return ob
+// }
+// console.log(xyz())
+
+
+// Merge Two Sorted Arrays
+// ● Problem: Given two sorted arrays, merge them into one sorted array.
+
+// inp= [1, 3, 5]
+// inp2=[2, 4, 6]
+// function xyz(){
+//     var j=inp.concat(inp2)
+    
+//     j.sort((a,b)=>
+//         a-b)    
+//     console.log(j)
+// }
+// xyz()
+    
+
+// test 5
+
+// Q1. Given an array of integers and a target sum, return the indices of the two
+// numbers that add up to the target.
+
+// var input=[2, 7, 11, 15]
+// var target=9
+
+// function num(){
+//     var array=[]
+//     for(var i=0;i<=input.length-1;i++){
+//     for(var j=0;j<=input.length-1;j++){
+//         if(input[i]+input[j]==target){
+//             array.push(i,j);
+//             return array
+
+//         }
+//     }
+    
+// }
+    
+// }
+// console.log(num())
+
+
+// test 6
+
+// ● Problem: Given two arrays, write a function to compute their intersection.
+
+//  num1 = [1, 2, 2, 1], 
+//  num2 = [2, 2]
+//  var t=[]
+//  function xyz(num1,num2){
+//     for(i=0;i<=num1.length-1;i++){
+//         for(j=0;j<=num2.length-1;j++){
+//             if(num1[i]==num2[j]){
+//                 t.push(num1[i])
+//                 num2=1
+
+//             }
+//         }
+//     }
+//     return t
+//  }
+//  console.log(xyz(num1,num2))
