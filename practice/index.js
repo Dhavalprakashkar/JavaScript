@@ -964,3 +964,72 @@ var target = 5;
 //     return t
 //  }
 //  console.log(xyz(num1,num2))
+
+
+
+
+
+//Q.  Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more 
+// than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
+
+// var call=["call","call","call"];
+// var n= 10;
+
+// function arr(call,n){
+//     var result=[]
+//     for(i=0;i<call.length;i++){
+//         if(call[i]==="call"){
+//             result.push(n)
+//             n++
+//         }
+//     }
+//     console.log(result)
+// }
+// arr(call,n)
+
+
+
+// Q. Filter Elements from Array
+// Given an integer array arr and a filtering function fn, return a filtered array filteredArr.
+
+// The fn function takes one or two arguments:
+
+// arr[i] - number from the arr
+// i - index of arr[i]
+// filteredArr should only contain the elements from the arr for which the expression fn(arr[i], i) evaluates to a truthy value. A truthy value is a value where Boolean(value) returns true.
+
+
+// var arr = [0, 10, 20, 30];
+// function oh(arr){
+//     var store=[]
+//     for(i=0;i<arr.length;i++){
+//         if(arr[i]>10){
+//             store.push(arr[i])
+//         }
+//     }
+//     console.log(store)
+// }
+// oh(arr) //oooutputtt :=  it should be greater than 10
+
+
+// Q Filter Elements from Array
+// Given an integer array arr and a filtering function fn, return a filtered array filteredArr.
+
+// The fn function takes one or two arguments:
+
+// arr[i] - number from the arr
+// i - index of arr[i]
+// filteredArr should only contain the elements from the arr for which the expression fn(arr[i], i) evaluates to a truthy value. 
+// A truthy value is a value where Boolean(value) returns true.
+
+// var arr = [1, 2, 3];
+// function trans(arr) {
+//     var store = [];  
+//     for (var i = 0; i < arr.length; i++) {
+//         store.push(arr[i] + 1);  
+//     }
+//     console.log(store);  
+// }
+
+// trans(arr); ooutput:- The function increases each value in the array by one.
+
