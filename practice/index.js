@@ -972,7 +972,7 @@ var target = 5;
 //Q.  Given an integer n, return a counter function. This counter function initially returns n and then returns 1 more 
 // than the previous value every subsequent time it is called (n, n + 1, n + 2, etc).
 
-// var call=["call","call","call"];
+// var call=["call","call","call","cal="];
 // var n= 10;
 
 // function arr(call,n){
@@ -1033,3 +1033,105 @@ var target = 5;
 
 // trans(arr); ooutput:- The function increases each value in the array by one.
 
+
+
+// Q. Merge Sort 
+
+// num1 = [1,2,3] 
+// num2 = [2,5,6]
+// arr=num1.concat(num2)
+
+// function merge(arr){
+//     for(var i=0;i<=arr.length-1;i++){
+//         for(var j=i+1;j<=arr.length-1;j++){
+//             if(arr[i]>arr[j]){
+//                 var temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+                
+//             }
+//         }
+//     }
+//     console.log(arr)
+// }
+// merge(arr)
+
+
+
+// Q.Remove Duplicate number which is sorted already
+
+
+// num = [1, 1, 2, 2, 3, 4, 5, 5]
+// var arr = []
+
+// function dupl(num) {
+//     for (var i = 0; i <= num.length - 1; i++) {
+//         for (var j = i + 1; j <= num.length - 1; j++) {
+//             if (num[i] == num[j]) {
+//                 num.splice(j, 1); // Removes the duplicate using splice
+//                 arr.push(num[i])
+//                 i--
+
+//             }
+//         }
+//     }
+//     console.log(num)
+// }
+
+// dupl(num)
+
+
+
+// Q. Majority Element
+
+// num = [3,2,3,4,4,5,5]
+// var arr = []
+// function dupl(num) {
+//     for (var i = 0; i <= num.length - 1; i++) {
+//         for (var j = i + 1; j <= num.length - 1; j++) {
+//             if (num[i] == num[j]) {
+//                 num.splice(j, 1); // Removes the duplicate using splice
+//                 arr.push(num[i])
+//                 i--
+
+//             }
+//         }
+//     }
+//     console.log(arr)
+// }
+
+// dupl(num)
+
+
+// var array=[1, 2, 3, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16]
+
+// function missing(array){
+//     missing=[]
+//     var expectednumber=1
+
+//     for(var i=0;i<=array.length-1;i++){
+//         while(array[i] !== expectednumber){
+//             missing.push(expectednumber);
+//             expectednumber++
+
+//         }
+//         expectednumber++
+//     }
+//     return missing;
+
+// }
+
+// console.log(missing(array))
+
+
+// Q Reverse string
+
+var str="drib"
+var reverse=""
+function ult(str){
+    for(var i=str.length-1;i>=0;i--){
+        reverse=reverse+str[i]
+    }
+    return reverse
+}
+console.log(ult(str))
